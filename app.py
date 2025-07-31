@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("📤 Subí la foto escaneada de la hoja", type
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption="Imagen cargada", use_column_width=True)
+    st.image(image, caption="Imagen cargada", use_container_width=True)
 
     # Aplicar OCR
     with st.spinner("🔍 Analizando imagen..."):
